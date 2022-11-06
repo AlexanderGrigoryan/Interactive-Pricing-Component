@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pricing Component</title>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="description">
+            <h1 class="description__title">Simple, traffic-based pricing</h1>
+            <div class="description__text"> 
+                <p>Sign-up for our 30-day trial.</p> 
+                <p>No credit card required.</p>
+            </div>
+        </section>
+        <section class="pageviews">
+            <div class="pageviews__package">
+                <h2 class="pageviews__title">100K PAGEVIEWS</h2>
+                <div class="pageviews__bar">
+                    <input class="styled-slider slider-progress" type="range" name="ageInputName"  id="ageInputId"  min="1" max="5" step="1" value="3" oninput="sliderChange(ageInputId.valueAsNumber)">
+                </div>
+                <div class="pageviews__count">
+                    <p class="pageviews__price">$16.00</p> 
+                    <p class="pageviews__month">/month</p> 
+                </div>
+            </div>
+            <div class="pageviews__billings">
+                <p class="billing__monthly">Monthly Billing</p>
+                <div class="billing__button">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span onclick="switchPaymentRate()" class="slider round"></span>
+                    </label>
+                </div>
+                <p class="billing__yearly">Yearly Billing</p>
+                <div class="billing__discount">-25%</div>
+                <div class="discount__large">25% discount</div>
+            </div>
+            <div class="services">
+                <ul class="services__list">
+                    <li class="services__name"><span class="services__padding">Unlimited websites</span></li>
+                    <li class="services__name"><span class="services__padding">100% data ownership</span></li>
+                    <li class="services__name"><span class="services__padding">Email reports</span></li>
+                </ul>
+                <div class="services__button">
+                    <button class="services__btn">Start my trial</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
